@@ -17,11 +17,4 @@ public class UserController{
 		return "user/insert";
 	}
 	
-	//가입 페이지로 이동
-	@RequestMapping("/user/update.do")
-	public String update() {
-		logger.info("경로 : update");
-				
-		return "user/update";
-		}
 }
