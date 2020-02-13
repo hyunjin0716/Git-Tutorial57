@@ -9,7 +9,7 @@ public class UserController{
 		return "user/login";
 	}
 	
-	//가입 페이지로 이동
+	//추가 페이지로 이동
 	@RequestMapping("/user/insert.do")
 	public String insert() {
 		logger.info("경로 : insert");
@@ -17,19 +17,29 @@ public class UserController{
 		return "user/insert";
 	}
 	
-	//가입 페이지로 이동
+	//수정 페이지로 이동
 	@RequestMapping("/user/update.do")
 	public String update() {
 		logger.info("경로 : update");
-				
+			
 		return "user/update";
 		}
 
-	//회원 수정 페이지로 이동 - master branch에서 작업했다!
+	//회원 수정 페이지로 이동
 	@RequestMapping("/user/select.do")
 	public String select() {
 		logger.info("경로 : select");
 				
 		return "user/select";
 		}
+	}
+
+	//삭제 페이지로 이동
+	@RequestMapping("/user/delete.do")
+	public String delete() {
+		logger.info("경로 : delete");
+			
+		return "user/update";
+	}
+	//작업공간에서  commit후 이동
 }
