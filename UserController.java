@@ -25,7 +25,7 @@ public class UserController{
 		return "user/update";
 		}
 
-	//회원 수정 페이지로 이동 - master branch에서 작업
+	//회원 수정 페이지로 이동 - master branch에서 작업했다!
 	@RequestMapping("/user/select.do")
 	public String select() {
 		logger.info("경로 : select");
